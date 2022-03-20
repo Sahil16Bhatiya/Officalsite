@@ -9,76 +9,7 @@ label{
 	display: none;
 }
 
-section {
-    padding-right: 80px;
-    width: 100%;
-    height: 100vh;
-    background: #333333;
-    overflow: hidden;
-}
 
-section h2 {
-    font-family: 'Quicksand', sans-serif;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    line-height: 100vh;
-    font-size: 10vw;
-    color: #ffffff;
-}
-
-.banner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.banner .blocks {
-    position: relative;
-    display: block;
-    width: 10vw;
-    height: 10vw;
-    animation: animated 0.75s ease-in-out forwards;
-    -webkit-animation: animated 0.75s ease-in-out forwards;
-}
-.banner .blocks:nth-child(even) {
-    animation: animated 1s ease-in-out forwards;
-    -webkit-animation: animated 1s ease-in-out forwards;
-}
-
-@keyframes animated {
-    0% {
-        opacity: 0;
-        transform: scale(0) translateY(1000px);
-        -webkit-transform: scale(0) translateY(1000px);
-        -moz-transform: scale(0) translateY(1000px);
-        -ms-transform: scale(0) translateY(1000px);
-        -o-transform: scale(0) translateY(1000px);
-    }
-    50% {
-        opacity: 1;
-        background: url('banner.jpeg');
-        background-position: center;
-        background-attachment: fixed;
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1) translateY(0);
-        background: url('banner.jpeg');
-        background-position: center;
-        background-attachment: fixed;
-        -webkit-transform: scale(1) translateY(0);
-        -moz-transform: scale(1) translateY(0);
-        -ms-transform: scale(1) translateY(0);
-        -o-transform: scale(1) translateY(0);
-}
-}
 .header{
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
